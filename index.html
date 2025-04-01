@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Bread</li>
+        <li>Coffee</li>
+        <li>Sugar</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2><b>External Image</b></h2>
+    <img src="https://media.istockphoto.com/id/1340413200/photo/aerial-view-of-a-high-voltage-substation.jpg?s=1024x1024&w=is&k=20&c=U5p8G8bvWBAEqF5OoYLiDa9ep7q2Splo92HSm2EORGQ=" alt="Beautiful Scenery" width="500">
+
+    <!-- Contacts Table -->
+    <h2><b>Contacts Table</b></h2>
+    <table border="10" cellpadding="10" cellspacing="0">
+        <caption><b>Contact List</b></caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ian Wright</td>
+                <td>Koinange St</td>
+                <td>+254745678090</td>
+                <td>iwright@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sergio Aguero</td>
+                <td>Moi Avenue</td>
+                <td>+9876543210</td>
+                <td>saguero@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Lionel Messi</td>
+                <td>Muindi mbingu</td>
+                <td>+25422334455</td>
+                <td>lmessi@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Chris Brown</td>
+                <td>kibra</td>
+                <td>+25566778899</td>
+                <td>cbrown@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Michael Jackson</td>
+                <td>Machakos</td>
+                <td>+23488776655</td>
+                <td>mjackson@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a secure password" required><br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown Field -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Subscription Plan:</label><br>
+        <input type="radio" id="basic" name="plan" value="basic" required>
+        <label for="basic">Basic</label>
+        <input type="radio" id="premium" name="plan" value="premium">
+        <label for="premium">Premium</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
